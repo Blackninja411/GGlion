@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGLion Home</title>
+    <style>
+        body {
+            background-color: #ff6600;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header, footer {
+            padding: 10px;
+            background-color: #cc5200;
+        }
+        img.logo {
+            width: 120px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo" alt="GGLion Logo">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/tournaments">Tournaments</a>
+            <a href="/shop">Shop</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to GGLion</h1>
+        <p>The pride of gamers across Africa.</p>
+    </main>
+
+    <footer>
+        <p>Powered by GGLion - The Pride of Gamers</p>
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo" alt="GGLion Logo">
+    </footer>
+</body>
+</html>
